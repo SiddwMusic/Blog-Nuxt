@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const url  = "http://localhost:8000/api";
+const url  = "http://142.93.221.27:8000/api";
 
 const baseURL = `${url}`;
 
