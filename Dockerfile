@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 
 # install simple http server for serving static content
-RUN npm install -g http-server
+#RUN npm install -g http-server
 
 # make the 'app' folder the current working directory
 WORKDIR /
@@ -20,3 +20,8 @@ RUN npm run build
 
 EXPOSE 3000
 #CMD [ "http-server", "dist" ]
+
+# set app serving to permissive / assigned
+ENV NUXT_HOST=0.0.0.0
+# set app port
+ENV NUXT_PORT=5000
