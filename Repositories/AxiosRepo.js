@@ -10,7 +10,7 @@ export default axios.create({
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json; charset=utf-8',
         'Access-Control-Allow-Methods':  'POST, GET, OPTIONS, PUT, DELETE',
-        'Access-Control-Allow-Headers':  'Content-Type, X-Auth-Token, Origin, Authorization',
+        'Access-Control-Allow-Headers':  'access-control-allow-headers,access-control-allow-methods,access-control-allow-origin',
       },
       proxyHeaders: false,
       credentials: false
