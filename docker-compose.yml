@@ -2,7 +2,7 @@ version: "3"
 
 services:
   nuxt:
-    build: ./blog/
+    build: ./
     container_name: nuxt-website
     restart: always
     ports:
