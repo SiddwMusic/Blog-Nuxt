@@ -114,6 +114,12 @@ export default {
   */
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json; charset=utf-8',
+      'Access-Control-Allow-Methods':  'POST, GET, OPTIONS, PUT, DELETE',
+      'Access-Control-Allow-Headers':  'access-control-allow-headers,access-control-allow-methods,access-control-allow-origin'
+    }
   },
 
   /*
