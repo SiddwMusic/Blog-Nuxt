@@ -10,12 +10,13 @@ services:
     command:
       "npm run start"
 
-  nginx:
-    image: nginx:1.13
-    container_name: nuxt-nginx
-    ports:
-      - "80:80"
-    volumes:
-      - ./nginx:/etc/nginx/conf.d
-    depends_on:
-      - nuxt
+  # nginx:
+  #   image: nginx:1.13
+  #   container_name: nuxt-nginx
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   volumes:
+  #     - ./nginx:/etc/nginx/conf.d
+  #   depends_on:
+  #     - nuxt
